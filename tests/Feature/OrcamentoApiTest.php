@@ -2,7 +2,6 @@
 
 namespace Tests\Feature;
 
-//use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
 
 class OrcamentoApiTest extends TestCase
@@ -19,7 +18,7 @@ class OrcamentoApiTest extends TestCase
             'email' => 'feliperfariasdev@gmail.com',
             'endereco' => 'R. Francelizio Oliveira Coelho Filho, 149 - Praia do PartidoSão Sebastião - SP, 11606-160',
             'tipo_orcamento' => 'Web',
-            'OpcoesEscolhidas' => 'Chrome;Safari;Firefox',
+            'opcoes_escolhida' => 'Chrome;Safari;Firefox',
             'qtd_paginas' => '10',
             'autenticacao' => 1,
             'pagamento' => 1,
@@ -42,7 +41,7 @@ class OrcamentoApiTest extends TestCase
             'email' => 'feliperfariasdev@gmail.com',
             'endereco' => 'R. Francelizio Oliveira Coelho Filho, 149 - Praia do PartidoSão Sebastião - SP, 11606-160',
             'tipo_orcamento' => 'Web',
-            'OpcoesEscolhidas' => 'Chrome;Safari;Firefox',
+            'opcoes_escolhida' => 'Chrome;Safari;Firefox',
             'qtd_paginas' => '10',
             'autenticacao' => 1,
             'pagamento' => 1,
