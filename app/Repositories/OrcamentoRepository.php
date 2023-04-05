@@ -3,23 +3,22 @@
 namespace App\Repositories;
 
 use App\Models\Orcamento;
+use App\Repositories\Contracts\OrcamentoRepositoryInterface;
 
 class OrcamentoRepository implements OrcamentoRepositoryInterface
 {
-    protected $orcamento;
-
     public function __construct(Orcamento $orcamento)
     {
         $this->orcamento = $orcamento;
     }
 
-    public function created($data)
+    public function store($data):object
     {
-        return $this->orcamento::created($data);
+        return $this->orcamento->create($data);
     }
 
-    public function getAll()
+    public function getAll():object
     {
-        return $this->orcamento->all();
+        return $this->orcamento::all();
     }
 }

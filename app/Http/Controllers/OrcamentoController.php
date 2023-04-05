@@ -3,37 +3,24 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreOrcamentoRequest;
-use App\Http\Resources\OrcamentoResource;
-use App\Services\OrcamentoService;
+use App\Services\Orcamento\ListarTodosOrcamentosService;
+use App\Services\Orcamento\NovoOrcamentoService;
 
 class OrcamentoController extends Controller
 {
-    protected $orcamentoService;
-
-    public function __construct(OrcamentoService $orcamentoService)
+    public function __construct(NovoOrcamentoService $novoOrcamentoService, ListarTodosOrcamentosService $listarTodosOrcamentosService)
     {
-        $this->orcamentoService = $orcamentoService;
+        $this->novoOrcamentoService = $novoOrcamentoService;
+        $this->listarTodosOrcamentosService = $listarTodosOrcamentosService;
     }
 
-    public function created(StoreOrcamentoRequest $data)
+    public function store(StoreOrcamentoRequest $data):object
     {
-        try {
-            $this->orcamentoService->created($data);
-            return response()->json([
-                "success" =>  true,
-                "message" =>  'inserido com sucesso',
-                "data" =>  $data->all()
-            ],200);
-        }catch (\Exception $exception){
-            return response()->json([
-                "success" =>  false,
-                "message" =>  $exception->getMessage()
-            ],422);
-        }
-
+        return $this->novoOrcamentoService->execute($data->all());
     }
 
-    public function getAll(){
-        return OrcamentoResource::collection($this->orcamentoService->getAll());
+    public function getAll():object
+    {
+        return $this->listarTodosOrcamentosService->execute();
     }
 }

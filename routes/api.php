@@ -6,6 +6,6 @@ use App\Http\Controllers\OrcamentoController;
 Route::group([
     'prefix' => 'v1',
 ], function () {
-    Route::post('/orcamento', [OrcamentoController::class,'created']);
+    Route::post('/orcamento', [OrcamentoController::class,'store']);
     Route::get('/orcamento', [OrcamentoController::class,'getAll']);
 });

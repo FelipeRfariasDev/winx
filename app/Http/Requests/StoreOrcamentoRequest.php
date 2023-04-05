@@ -39,7 +39,7 @@ class StoreOrcamentoRequest extends FormRequest
             'email.required' => 'Campo email e obrigatório',
             'tipo_orcamento.required' => 'Selecione uma opcao e obrigatório opcoes(Web,Mobile,Desktop)',
             'opcoes_escolhida.required' => 'Opcoes escolhida e um campo obrigatorio',
-            'qtd_paginas.required' => 'Campo nome e obrigatório',
+            'qtd_paginas.required' => 'Campo qtd_paginas e obrigatório',
             'autenticacao.required' => 'Campo autenticacao e obrigatório',
             'pagamento.required' => 'Campo pagamento e obrigatório',
         ];

@@ -2,8 +2,8 @@
 
 namespace App\Providers;
 
+use App\Repositories\Contracts\OrcamentoRepositoryInterface;
 use App\Repositories\OrcamentoRepository;
-use App\Repositories\OrcamentoRepositoryInterface;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
