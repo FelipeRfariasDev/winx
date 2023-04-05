@@ -2,25 +2,27 @@
 
 namespace App\Http\Controllers;
 
+
+use App\Actions\OrcamentoController\ListarTodosOrcamentosAction;
+use App\Actions\OrcamentoController\NovoOrcamentoAction;
 use App\Http\Requests\StoreOrcamentoRequest;
-use App\Services\Orcamento\ListarTodosOrcamentosService;
-use App\Services\Orcamento\NovoOrcamentoService;
+
 
 class OrcamentoController extends Controller
 {
-    public function __construct(NovoOrcamentoService $novoOrcamentoService, ListarTodosOrcamentosService $listarTodosOrcamentosService)
+    public function __construct(NovoOrcamentoAction $novoOrcamentoAction, ListarTodosOrcamentosAction $listarTodosOrcamentosAction)
     {
-        $this->novoOrcamentoService = $novoOrcamentoService;
-        $this->listarTodosOrcamentosService = $listarTodosOrcamentosService;
+        $this->novoOrcamentoAction = $novoOrcamentoAction;
+        $this->listarTodosOrcamentosActions = $listarTodosOrcamentosAction;
     }
 
     public function store(StoreOrcamentoRequest $data):object
     {
-        return $this->novoOrcamentoService->execute($data->all());
+        return $this->novoOrcamentoAction->execute($data->all());
     }
 
     public function getAll():object
     {
-        return $this->listarTodosOrcamentosService->execute();
+        return $this->listarTodosOrcamentosActions->execute();
     }
 }

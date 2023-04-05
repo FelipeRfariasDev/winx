@@ -1,15 +1,13 @@
 <?php
 
-namespace App\Services\Orcamento;
+namespace App\Actions\OrcamentoController;
 
 use App\Http\Resources\OrcamentoResource;
-use App\Repositories\OrcamentoRepository;
+use App\Repositories\Contracts\OrcamentoRepositoryInterface;
 
-class ListarTodosOrcamentosService
+class ListarTodosOrcamentosAction
 {
-    protected $orcamentoRepository;
-
-    public function __construct(OrcamentoRepository $orcamentoRepository) {
+    public function __construct(OrcamentoRepositoryInterface $orcamentoRepository) {
         $this->orcamentoRepository = $orcamentoRepository;
     }
 
