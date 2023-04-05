@@ -1,0 +1,96 @@
+{
+	"info": {
+		"_postman_id": "13eac4c6-874b-4c09-9704-868dafc4513c",
+		"name": "WINX UNIVERSE - Software House (Orçamentos)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21923797"
+	},
+	"item": [
+		{
+			"name": "RealizarOrçamento",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\":\"Felipe R Farias\",\r\n    \"email\":\"feliperfariasdev@gmail.com\",\r\n    \"qtd_paginas\":15,\r\n    \"tipo_orcamento\":\"Web\",\r\n    \"opcoes_escolhida\":\"Chrome;Safari;Firefox\",\r\n    \"autenticacao\":1,\r\n    \"pagamento\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL_BASE}}orcamento",
+					"host": [
+						"{{URL_BASE}}orcamento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Todos Orçamentos",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL_BASE}}orcamento",
+					"host": [
+						"{{URL_BASE}}orcamento"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL_BASE",
+			"value": "http://localhost/api/v1/",
+			"type": "string"
+		}
+	]
+}

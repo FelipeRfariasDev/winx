@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\OrcamentoController;
+use App\Mail\EnviarEmailEmpresaOrcamento;
 
 Route::group([
     'prefix' => 'v1',
