@@ -45,12 +45,18 @@ docker-compose up -d ou ./vendor/bin/sail up
 
 Para mais detalhes Laravel Sail [Clique Aqui](https://laravel.com/docs/10.x/sail)
 
+## Para executar os jobs que estão na fila 
+
+php artisan queue:work
+
 # Iniciei realizando um Protótipo do frontend para elucidar como iria construir a api
 
 ![alt text](https://github.com/FelipeRfariasDev/winx/blob/v1/storage/prototipo/Cliente.png?raw=true)
 
+
 ## Ao selecionar uma das opções (Web,Mobile,Desktop) será considerado a próxima etapa solicitando mais informações para o orçamento
- 
+
+
 # Web
 ![alt text](https://github.com/FelipeRfariasDev/winx/blob/v1/storage/prototipo/Web.png?raw=true)
 # Mobile

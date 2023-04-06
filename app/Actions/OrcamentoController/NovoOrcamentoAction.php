@@ -18,8 +18,11 @@ class NovoOrcamentoAction
     {
         $novoOrcamento = (array) json_decode($this->orcamentoRepository->store($data));
 
-        Mail::to(env('MAIL_ORCAMENTO','feliperfariasdev@gmail.com'),env('NAME_ORCAMENTO','Felipe R Farias'))->send(new EnviarOrcamentoEmpresa($novoOrcamento));
-        Mail::to($novoOrcamento['email'],$novoOrcamento['nome'])->send(new EnviarOrcamentoCliente($novoOrcamento));
+        Mail::to(env('MAIL_ORCAMENTO','feliperfariasdev@gmail.com'),env('NAME_ORCAMENTO','Felipe R Farias'))
+            ->queue(new EnviarOrcamentoEmpresa($novoOrcamento));
+
+        Mail::to($novoOrcamento['email'],$novoOrcamento['nome'])
+            ->queue(new EnviarOrcamentoCliente($novoOrcamento));
 
         return (object) $novoOrcamento;
     }
