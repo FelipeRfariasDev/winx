@@ -62,4 +62,4 @@ CREATE SCHEMA `winx_phpunit` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unico
 
 vendor/bin/phpunit --testdox
 
-![alt text](https://github.com/FelipeRfariasDev/winx/blob/v1/storage/img_test/teste_phpunit.PNG?raw=true)
+![alt text](https://github.com/FelipeRfariasDev/winx/blob/main/storage/img_test/teste_phpunit.PNG?raw=true)
