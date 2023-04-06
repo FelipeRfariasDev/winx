@@ -55,3 +55,11 @@ Para mais detalhes Laravel Sail [Clique Aqui](https://laravel.com/docs/10.x/sail
 <h3 align="left">Emprea WINX UNIVERSE - Software House recebe a notificação para enviar em contato com o cliente que solicitou o orçamento</h3>
 
 ![alt text](https://github.com/FelipeRfariasDev/winx/blob/v1/storage/img_email/EmailEmpresa.PNG?raw=true)
+
+# PhpUnit
+
+CREATE SCHEMA `winx_phpunit` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+vendor/bin/phpunit --testdox
+
+![alt text](https://github.com/FelipeRfariasDev/winx/blob/v1/storage/img_test/teste_phpunit.PNG?raw=true)

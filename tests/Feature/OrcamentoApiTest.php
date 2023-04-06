@@ -14,12 +14,10 @@ class OrcamentoApiTest extends TestCase
     public function test_inserir_orcamento_web_endpoin_api_erro(): void
     {
         $orcamento_data = [
-            'nome' => 'Felipe R Farias',
-            'email' => 'feliperfariasdev@gmail.com',
-            'endereco' => 'R. Francelizio Oliveira Coelho Filho, 149 - Praia do PartidoSão Sebastião - SP, 11606-160',
-            'tipo_orcamento' => 'Web',
-            'opcoes_escolhida' => 'Chrome;Safari;Firefox',
-            'qtd_paginas' => '10',
+            'endereco' => "R. Francelizio Oliveira Coelho Filho, 149 - Praia do PartidoSão Sebastião - SP, 11606-160",
+            'tipo_orcamento' => "Web",
+            'opcoes_escolhida' => "Chrome;Safari;Firefox",
+            'qtd_paginas' => "10",
             'autenticacao' => 1,
             'pagamento' => 1,
         ];
