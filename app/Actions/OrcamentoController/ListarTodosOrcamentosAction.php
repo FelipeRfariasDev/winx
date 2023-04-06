@@ -13,15 +13,6 @@ class ListarTodosOrcamentosAction
 
     public function execute():object
     {
-        try {
-            return response()->json([
-                "Orcamentos" =>  OrcamentoResource::collection($this->orcamentoRepository->getAll()),
-            ],200);
-        }catch (\Exception $exception){
-            return response()->json([
-                "success" =>  false,
-                "message" =>  $exception->getMessage()
-            ],422);
-        }
+        return OrcamentoResource::collection($this->orcamentoRepository->getAll());
     }
 }
