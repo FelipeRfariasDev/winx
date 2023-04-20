@@ -51,26 +51,26 @@ php artisan queue:work
 
 # Iniciei realizando um Protótipo do frontend para elucidar como iria construir a api
 
-![alt text](https://github.com/FelipeRfariasDev/winx/blob/v1/storage/prototipo/Cliente.png?raw=true)
+![alt text](https://github.com/FelipeRfariasDev/winx/blob/main/storage/prototipo/Cliente.png?raw=true)
 
 
 ## Ao selecionar uma das opções (Web,Mobile,Desktop) será considerado a próxima etapa solicitando mais informações para o orçamento
 
 
 # Web
-![alt text](https://github.com/FelipeRfariasDev/winx/blob/v1/storage/prototipo/Web.png?raw=true)
+![alt text](https://github.com/FelipeRfariasDev/winx/blob/main/storage/prototipo/Web.png?raw=true)
 # Mobile
-![alt text](https://github.com/FelipeRfariasDev/winx/blob/v1/storage/prototipo/Mobile.png?raw=true)
+![alt text](https://github.com/FelipeRfariasDev/winx/blob/main/storage/prototipo/Mobile.png?raw=true)
 # Desktop
-![alt text](https://github.com/FelipeRfariasDev/winx/blob/v1/storage/prototipo/Desktop.png?raw=true)
+![alt text](https://github.com/FelipeRfariasDev/winx/blob/main/storage/prototipo/Desktop.png?raw=true)
 
 <h3 align="left">Ao realizar o orçamento enviamos um email para LEAD(Cliente) que solicitou o orçamento</h3>
 
-![alt text](https://github.com/FelipeRfariasDev/winx/blob/v1/storage/img_email/EmailCliente.PNG?raw=true)
+![alt text](https://github.com/FelipeRfariasDev/winx/blob/main/storage/img_email/EmailCliente.PNG?raw=true)
 
 <h3 align="left">Empresa WINX UNIVERSE - Software House também recebe um email para entrar contato com o LEAD(Cliente) que solicitou o orçamento</h3>
 
-![alt text](https://github.com/FelipeRfariasDev/winx/blob/v1/storage/img_email/EmailEmpresa.PNG?raw=true)
+![alt text](https://github.com/FelipeRfariasDev/winx/blob/main/storage/img_email/EmailEmpresa.PNG?raw=true)
 
 # Para realizar os testes com PhpUnit definir no arquivo phpunit.xml DB_DATABASE=winx_phpunit que seria o banco de dados para realizar os testes
 
